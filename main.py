@@ -6,3 +6,7 @@
 @ tool: PyCharm
 @ time: 2021/5/26 14:00
 '''
+import torch
+
+print(torch.__version__)
+
