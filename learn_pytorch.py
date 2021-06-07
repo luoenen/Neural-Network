@@ -78,3 +78,41 @@ print(a.dtype)
 
 a = torch.DoubleTensor([1,2])
 print(a.dtype)
+
+a = torch.float64
+print(a)
+
+a = torch.Tensor(1)
+print(a)
+print(type(a))
+print(a.dtype)
+
+a = torch.Tensor(np.arange(8).reshape(2,2,2))
+print(a)
+a = a.transpose(1,2)
+print(a)
+
+a = torch.tensor([3,4],dtype=torch.float64)
+b = torch.tensor([3,4],dtype=torch.float64)
+print(a+b)
+a = a.new_ones(4,4,dtype=torch.float16)
+print(a)
+
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cup")
+a.to(device)
+print(a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
